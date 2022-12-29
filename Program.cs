@@ -29,7 +29,11 @@ int getCountElemntMoreThree(string[] arr)
     return count;
 }
 
+void showArr(string[] arr)
+{
+    Console.Write($"Ваш массив: [{string.Join(", ", arr)}] \n");
+}
 string[] arr = { "Sunday", "Monday", "Tue", "Wed", "", "Friday", "Sa" };
 arr = getArrWereLenghLessThree(arr);
-Console.Write($"Ваш массив: [{string.Join(", ", arr)}] \n");
+showArr(arr);
 
